@@ -4,12 +4,10 @@ title:  "Juguete cerdito para masajes"
 categories: jekyll update
 price: 30 Euros
 image: /images/cerdito.jpg
+category: Juguetes
 ---
 
-<ol class="breadcrumb">
-<li><a href="/">Inicio</a></li>
-<li><a href="#">Juguetes</a></li>
-</ol>
 <h2>{{ page.title }}</h2>
-<img src="{{ page.image }}" alt="Oink Oink">
+<img src="{{ site.baseurl }}{{ page.image }}" alt="Oink Oink">
 <h3>{{ page.price }}</h3>
+<button type="button" class="btn btn-default btn-lg">Comprar</button>

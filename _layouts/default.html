@@ -6,7 +6,7 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
     </head>
     <body>
 
@@ -20,13 +20,13 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="/">{{ site.name }}</a>
+		      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-ex1-collapse">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a class="glyphicon glyphicon-home" href="/"></a></li>
+		        <li class="active"><a class="glyphicon glyphicon-home" href="{{ site.baseurl }}/"></a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Secciones <b class="caret"></b></a>
 		          <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
         <div class="footer">
 		  <div class="panel panel-default">
 		    <div class="panel-body">
-                <p>All rights reserved | 2013 | <a href="/about.html">Sobre nosotros</a></p>
+                <p>All rights reserved | 2013 | <a href="{{ site.baseurl }}/about.html">Sobre nosotros</a></p>
 		    </div>
 		  </div>
           <!-- ><div class="contact">

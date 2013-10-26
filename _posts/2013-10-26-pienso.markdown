@@ -4,14 +4,11 @@ title:  "Complemento alimenticio Happy Dog ArthroFit"
 categories: jekyll update
 price: 75 Euros
 image: /images/pienso.jpg
+category: Comida
 ---
 
-<ol class="breadcrumb">
-<li><a href="/">Inicio</a></li>
-<li><a href="#">Comida</a></li>
-</ol>
 <h2>{{ page.title }}</h2>
-<img src="{{ page.image }}" alt="Caseta">
+<img src="{{ site.baseurl }}{{ page.image }}" alt="Caseta">
 <h3>{{ page.price }}</h3>
 <button type="button" class="btn btn-default btn-lg">Comprar</button>
 	
