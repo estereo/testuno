@@ -1,0 +1,46 @@
+---
+layout: default
+title: Tienda Epi
+---
+
+<div id="home">
+	<div class="jumbotron">
+	  <div class="container">
+	    <h1>Bienvenido a la mejor tienda online</h1>
+	    <p>Aquí podrás encontrar todo cuanto buscabas.</p>
+	    <p><a class="btn btn-primary btn-lg">Crea tu cuenta ahora</a></p>
+	  </div>
+	</div>
+  
+  <section class="container">
+	  <div class="row">
+	 	 {% for post in site.posts %}
+   	  	<div class="col-sm-6 col-md-3">
+     	   <div class="thumbnail">
+       		<img data-src="holder.js/300x200" src="{{ post.image }}">
+       	 	  <div class="caption">
+         		<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        		<p>{{ post.price }}</p>
+        		<p><a href="#" class="btn btn-primary">Comprar</a></p>
+       	 	  </div>
+     	   </div>
+   	 	</div>
+	     {% endfor %}
+  	  </div>
+  </section>
+  
+  
+  
+  
+  
+  
+</div>
+
+<!-- <div id="home">
+  <h1>Esto es un H1</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div> -->
